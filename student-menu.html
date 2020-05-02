@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>testownik - administrator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href= "Styleadmin.css" type="text/css"/>
+
+</head>
+<body>
+<!-- pomoc -->
+<span onclick="document.getElementById('pomocId').style.display='block'" class = "help"><a href="#">Pomoc</a></span>
+<div id="pomocId" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+  
+    <div class="container">
+       
+      <h2 style = "color : red; text-align:center">Pomoc</h2> <br>           
+      
+      <a><b>Nie możesz przejść dalej?</a></b> <br>
+      <a>Upewnij się, że poprawnie uzupełniłeś wszystkie pola</a><br><br>
+      <a><b>Nie możesz wgrać pliku z pytaniami?</a></b><br>
+      <a>Sprawdź czy plik, który wybrałeś jest poprawny</a><br><br>
+      <a><b>Nie możesz wydrukować raportu?</a></b><br>
+      <a>Spróbuj ponownie otworzyć pdf</a><br>
+      <a>Sprawdź swoje połączenie z internetem</a><br>
+      <a>Upewnij się czy, że problem nie leży po stronie drukarki</a><br><br>
+	  <a><b>Nie możesz wykonać testu?</a></b><br>
+	  <a>Najprawdopodobniej test jeszcze się nie rozpoczął. Skontaktuj się z wykładowcą.</a><br><br>
+	  <a><b>Nie możesz zobaczyć swojego wyniku?</a></b><br>
+	  <a>Taka sytuacja może mieć miejsce tuż po zakończeniu testu, kiedy wyniki jeszcze się zapisują. Jeżeli po dluższym czasie nadal będziesz miał/miała ten problem, skontaktuj się z wykładowcą</a><br><br><br>
+	  <a><b> Skontaktuj się z nami:</a></b><br>
+      <a>tel. 22 34 70 100</a><br>
+      <a>fax. 22 34 70 261</a><br>
+      <a>e-mail. informacja@men.gov.pl</a><br>
+      
+    </div>
+  </form>
+</div>
+
+<script src="pomoc.js"></script>
+<!-- pomoc-koniec -->
+<div class = "wyloguj">
+	<button style = "background-color: #AAAAAA; padding: 10px 15px; width: 10%; font-size: 15px;" type="submit" > Wyloguj</button>
+</div>
+    <div class="container">
+		<div class = "admin" >
+
+        <div class = "center">
+     
+	  <button style = "background-color: #FFCC66";color="white"; type="submit">Moje testy</button>
+	  <br><br>
+	  <button style = "background-color: #FFCC33";color="white"; type="submit">Moje oceny</button>
+	  <br><br>
+	  <button style = "background-color: #FF9900";color="white"; type="submit">Historia testów</button>
+	  <br>
+	     </div>
+
+		</div>
+    </div>
+
+
+</body>
+</html>
